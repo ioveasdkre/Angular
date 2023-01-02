@@ -1,0 +1,16 @@
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8 # 編碼
+indent_style = space
+indent_size = 2 # Tab縮排
+insert_final_newline = true # 每個檔案最後一行是否斷行
+trim_trailing_whitespace = true # 每個檔案存檔的時候是否把行尾去除空白
+
+[*.ts]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

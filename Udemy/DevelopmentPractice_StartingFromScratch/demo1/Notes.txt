@@ -1,0 +1,34 @@
+檔案說明
+angular.json                  設定檔( 版本 6 以前 angular-cli.json)
+.editorconfig                 設定檔(處理斷行符號, Tab等...)
+.gitignore                    git忽略設定檔
+package.json                  專案的 npm設定檔
+tsconfig.json                 TypeScript相關設定檔
+tslint.json                   tslint檢查程式碼品質
+
+新版預設不會有的檔案
+karma.config.js               單元測試工具
+protractor.conf.js            實作 End-to-end Testing使用的設定檔
+
+
+目錄說明
+node_modules                  npm安裝好的所有套件都在這個目錄下
+src                           angular主要的原始碼
+src\app                       應用程式的主檔
+src\index.html                首頁
+src\styles.css                全域樣式
+src\main.ts                   主控台
+src\app\app.component.spec.ts 單元測試的定義檔
+src\assets                    存放靜態檔案
+src\assets\.gitkeep           當資料夾底下無檔案時不會進入 git版控 此檔用來進入版控使用
+src\favicon.ico               瀏覽器頁籤檢視的圖示
+
+新版預設不會有的目錄
+e2e                           End-to-end Testing所有測試指令檔
+src\environment.ts            angular應用程式會使用的的 環境變數
+src\environment.prod.ts       angular應用程式會使用的的 環境變數 只有在 build出 production版的時候使用
+src\polyfills.ts              使用者 使用較舊的瀏覽器使用
+src\test.ts                   單元測試由 karma.config.js使用
+scr\tsconfig.app.json         繼承上一層的定義 並加上 額外的定義 針對 app資料夾裡面的 TypeScript設定
+scr\tsconfig.spec.json        單元測試程式碼使用的設定檔
+scr\typings.d.ts              定義額外的 TypeScript的型別定義 ex: 整合 jQuery到 Angular使用的全域變數
